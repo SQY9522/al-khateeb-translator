@@ -10,9 +10,5 @@ services:
         generateValue: true
       - key: DEBUG
         value: "False"
-      - key: OPENAI_API_KEY
-        sync: false
-      - key: OPENAI_TRANSCRIBE_MODEL
-        value: gpt-4o-mini-transcribe
-      - key: OPENAI_TEXT_MODEL
-        value: gpt-5-mini
+      - key: ARGOS_MODEL_DIR
+        value: ".argos"

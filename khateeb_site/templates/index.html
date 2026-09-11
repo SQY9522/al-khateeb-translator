@@ -10,13 +10,13 @@
 
 <section class="panel hidden" id="langs"><div class="head"><span id="step1">الخطوة 1</span><h2 id="chooseTitle">اختر لغتك</h2><p id="chooseHint">اختر اللغة التي تريد أن تظهر بها الترجمة.</p></div><input id="search" placeholder="ابحث عن لغة..."><div class="grid" id="grid"></div></section>
 
-<section class="panel hidden" id="notice"><div class="card notice"><div class="seal">ﷺ</div><span class="eyebrow" id="noticeEyebrow">تنبيه مهم</span><h2 id="noticeTitle">أخي المسلم</h2><p id="hadithIntro">تذكّر حديث رسول الله ﷺ:</p><blockquote>«مَن توضأ فأحسن الوضوء، ثم أتى الجمعة، فاستمع وأنصت، غُفر له ما بينه وبين الجمعة، وزيادة ثلاثة أيام، ومن مس الحصى فقد لغا.»</blockquote><small id="hadithGrade">خلاصة حكم المحدث: صحيح</small><hr><p id="noticeText">لذلك لا تنشغل بالجوال أثناء الخطبة. استخدم الموقع فقط لمساعدتك على فهم كلام الخطيب، ولا يصدر الموقع أي صوت.</p><button type="button" class="primary wide" id="goLive">أفهم ذلك — بدء الترجمة</button></div></section>
+<section class="panel hidden" id="notice"><div class="card notice"><div class="seal">ﷺ</div><span class="eyebrow" id="noticeEyebrow">تنبيه مهم</span><h2 id="noticeTitle">أخي المسلم</h2><p id="hadithIntro">تذكّر حديث رسول الله ﷺ:</p><blockquote>«مَن توضأ فأحسن الوضوء، ثم أتى الجمعة، فاستمع وأنصت، غُفر له ما بينه وبين الجمعة، وزيادة ثلاثة أيام، ومن مس الحصى فقد لغا.»</blockquote><small id="hadithGrade">خلاصة حكم المحدث: صحيح</small><div class="hadith-translation"><b id="hadithTranslationTitle">ترجمة الحديث</b><p id="hadithTranslation">ستظهر ترجمة الحديث هنا عند اختيار اللغة.</p></div><hr><p id="noticeText">لذلك لا تنشغل بالجوال أثناء الخطبة. استخدم الموقع فقط لمساعدتك على فهم كلام الخطيب، ولا يصدر الموقع أي صوت.</p><button type="button" class="primary wide" id="goLive">أفهم ذلك — بدء الترجمة</button></div></section>
 
 <section class="panel hidden" id="live"><div class="liveTop"><div><span class="eyebrow" id="step2">الخطوة 2</span><h2 id="langTitle">الترجمة المباشرة</h2></div><span class="status" id="status">جاهز</span></div>
 <div class="trans"><div class="meta"><span id="langName">العربية</span><span id="timer">00:00</span></div><div class="out" id="out">اضغط «بدء الاستماع» وقرّب الهاتف من مصدر الصوت.</div><div class="interim" id="interim"></div></div>
 <div class="micbox"><button type="button" id="mic" class="mic">🎙</button><b id="micText">بدء الاستماع</b><small id="micNote">لن يصدر الموقع أي صوت</small></div>
 <div class="buttons"><button type="button" id="clear">مسح النص</button><button type="button" id="font">تكبير النص</button><button type="button" id="change">تغيير اللغة</button></div>
-<p class="warning">الترجمة آلية وقد تحتوي على أخطاء؛ الهدف هو المساعدة على الفهم.</p>
+<p class="warning" id="warning">يعمل الموقع بتقنيات الذكاء الاصطناعي، وقد يخطئ الذكاء الاصطناعي أحيانًا. الهدف هو المساعدة على الفهم.</p>
 </section></main>
 <footer><b>الخطيب المترجم</b><span id="footerDesc">خدمة نصية لمساعدة المصلين على فهم الخطبة بلغاتهم.</span><span id="rights">جميع الحقوق محفوظة لأسرة الصناديد® 2026</span></footer>
 <script>window.LANGUAGES={{ languages|safe }};</script>

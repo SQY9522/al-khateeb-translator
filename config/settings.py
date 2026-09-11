@@ -20,6 +20,4 @@ STATIC_ROOT=BASE_DIR/"staticfiles"
 STATICFILES_DIRS=[BASE_DIR/"khateeb_site"/"static"]
 STORAGES={"staticfiles":{"BACKEND":"whitenoise.storage.CompressedManifestStaticFilesStorage"}}
 DEFAULT_AUTO_FIELD="django.db.models.BigAutoField"
-OPENAI_API_KEY=os.getenv("OPENAI_API_KEY","")
-OPENAI_TRANSCRIBE_MODEL=os.getenv("OPENAI_TRANSCRIBE_MODEL","gpt-4o-mini-transcribe")
-OPENAI_TEXT_MODEL=os.getenv("OPENAI_TEXT_MODEL","gpt-5-mini")
+ARGOS_MODEL_DIR=os.getenv("ARGOS_MODEL_DIR",".argos")

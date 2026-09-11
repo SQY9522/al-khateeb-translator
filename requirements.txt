@@ -3,4 +3,4 @@ gunicorn>=23.0
 whitenoise>=6.9
 dj-database-url>=2.3
 psycopg2-binary>=2.9
-openai>=1.100
+argostranslate>=1.10
