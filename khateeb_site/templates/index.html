@@ -4,21 +4,21 @@
 <meta name="theme-color" content="#123c32"><title>الخطيب المترجم</title>
 <link rel="stylesheet" href="{% static 'khateeb/style.css' %}">
 </head><body>
-<header class="top"><a class="brand" href="#"><img src="{% static 'khateeb/logo.png' %}"><span>الخطيب المترجم</span></a><button id="homeLang">English</button></header>
+<header class="top"><a class="brand" href="#"><img src="{% static 'khateeb/logo.png' %}"><span id="brandText">الخطيب المترجم</span></a><button id="homeLang">English</button></header>
 <main>
-<section class="hero" id="home"><img class="hero-logo" src="{% static 'khateeb/logo.png' %}"><p class="eyebrow">AL-KHATEEB TRANSLATOR</p><h1>مرحبًا بك في<br><b>الخطيب المترجم</b></h1><p>ترجمة نصية فورية تساعدك على فهم الخطبة بلغتك، بهدوء وبدون أي صوت يصدر من الموقع.</p><button class="primary" id="start">اختر لغتك <span>←</span></button><small>🔇 نص فقط • 📱 مصمم للجوال</small></section>
+<section class="hero" id="home"><img class="hero-logo" src="{% static 'khateeb/logo.png' %}"><p class="eyebrow">AL-KHATEEB TRANSLATOR</p><h1><span id="heroTitle">مرحبًا بك في</span><br><b id="heroBrand">الخطيب المترجم</b></h1><p id="heroDesc">ترجمة نصية فورية تساعدك على فهم الخطبة بلغتك، بهدوء وبدون أي صوت يصدر من الموقع.</p><button type="button" class="primary" id="start">اختر لغتك ←</button><small id="heroNote">🔇 نص فقط • 📱 مصمم للجوال</small></section>
 
-<section class="panel hidden" id="langs"><div class="head"><span>الخطوة 1</span><h2>اختر لغتك</h2><p>Choose the language you want to read.</p></div><input id="search" placeholder="ابحث عن لغة..."><div class="grid" id="grid"></div></section>
+<section class="panel hidden" id="langs"><div class="head"><span id="step1">الخطوة 1</span><h2 id="chooseTitle">اختر لغتك</h2><p id="chooseHint">اختر اللغة التي تريد أن تظهر بها الترجمة.</p></div><input id="search" placeholder="ابحث عن لغة..."><div class="grid" id="grid"></div></section>
 
-<section class="panel hidden" id="notice"><div class="card notice"><div class="seal">ﷺ</div><span class="eyebrow">تنبيه مهم</span><h2>أخي المسلم</h2><p>تذكّر حديث رسول الله ﷺ:</p><blockquote>«مَن توضأ فأحسن الوضوء، ثم أتى الجمعة، فاستمع وأنصت، غُفر له ما بينه وبين الجمعة، وزيادة ثلاثة أيام، ومن مس الحصى فقد لغا.»</blockquote><small>خلاصة حكم المحدث: صحيح</small><hr><p>لذلك لا تنشغل بالجوال أثناء الخطبة. استخدم الموقع فقط لمساعدتك على فهم كلام الخطيب، ولا يصدر الموقع أي صوت.</p><button class="primary wide" id="goLive">أفهم ذلك — بدء الترجمة</button></div></section>
+<section class="panel hidden" id="notice"><div class="card notice"><div class="seal">ﷺ</div><span class="eyebrow" id="noticeEyebrow">تنبيه مهم</span><h2 id="noticeTitle">أخي المسلم</h2><p id="hadithIntro">تذكّر حديث رسول الله ﷺ:</p><blockquote>«مَن توضأ فأحسن الوضوء، ثم أتى الجمعة، فاستمع وأنصت، غُفر له ما بينه وبين الجمعة، وزيادة ثلاثة أيام، ومن مس الحصى فقد لغا.»</blockquote><small id="hadithGrade">خلاصة حكم المحدث: صحيح</small><hr><p id="noticeText">لذلك لا تنشغل بالجوال أثناء الخطبة. استخدم الموقع فقط لمساعدتك على فهم كلام الخطيب، ولا يصدر الموقع أي صوت.</p><button type="button" class="primary wide" id="goLive">أفهم ذلك — بدء الترجمة</button></div></section>
 
-<section class="panel hidden" id="live"><div class="liveTop"><div><span class="eyebrow">الخطوة 2</span><h2 id="langTitle">الترجمة المباشرة</h2></div><span class="status" id="status">جاهز</span></div>
+<section class="panel hidden" id="live"><div class="liveTop"><div><span class="eyebrow" id="step2">الخطوة 2</span><h2 id="langTitle">الترجمة المباشرة</h2></div><span class="status" id="status">جاهز</span></div>
 <div class="trans"><div class="meta"><span id="langName">العربية</span><span id="timer">00:00</span></div><div class="out" id="out">اضغط «بدء الاستماع» وقرّب الهاتف من مصدر الصوت.</div><div class="interim" id="interim"></div></div>
-<div class="micbox"><button id="mic" class="mic">🎙</button><b id="micText">بدء الاستماع</b><small>لن يصدر الموقع أي صوت</small></div>
-<div class="buttons"><button id="clear">مسح النص</button><button id="font">تكبير النص</button><button id="change">تغيير اللغة</button></div>
+<div class="micbox"><button type="button" id="mic" class="mic">🎙</button><b id="micText">بدء الاستماع</b><small id="micNote">لن يصدر الموقع أي صوت</small></div>
+<div class="buttons"><button type="button" id="clear">مسح النص</button><button type="button" id="font">تكبير النص</button><button type="button" id="change">تغيير اللغة</button></div>
 <p class="warning">الترجمة آلية وقد تحتوي على أخطاء؛ الهدف هو المساعدة على الفهم.</p>
 </section></main>
-<footer><b>الخطيب المترجم</b><span>خدمة نصية لمساعدة المصلين على فهم الخطبة بلغاتهم.</span><span>جميع الحقوق محفوظة لأسرة الصناديد® 2026</span></footer>
+<footer><b>الخطيب المترجم</b><span id="footerDesc">خدمة نصية لمساعدة المصلين على فهم الخطبة بلغاتهم.</span><span id="rights">جميع الحقوق محفوظة لأسرة الصناديد® 2026</span></footer>
 <script>window.LANGUAGES={{ languages|safe }};</script>
 <script src="{% static 'khateeb/app.js' %}"></script>
 </body></html>
